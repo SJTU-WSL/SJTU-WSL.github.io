@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Personal website template for portfolio, projects, and contact."
+      content="Wang Shenglin personal website: bio, research interests, awards, and contact."
     />
-    <title>Your Name | Personal Site</title>
+    <title>Wang Shenglin | Personal Website</title>
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="container nav-wrap">
-        <a class="brand" href="#home">Your Name</a>
+        <a class="brand" href="#home">Wang Shenglin</a>
         <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">
           Menu
         </button>
         <nav id="main-nav" class="main-nav">
           <a href="#home">Home</a>
           <a href="#about">About</a>
-          <a href="#projects">Projects</a>
+          <a href="#research">Research</a>
+          <a href="#awards">Awards</a>
           <a href="#contact">Contact</a>
         </nav>
       </div>
@@ -28,50 +29,100 @@
 
     <main>
       <section id="home" class="hero section">
-        <div class="container hero-content">
-          <p class="eyebrow">Portfolio</p>
-          <h1>Build, Learn, Share</h1>
-          <p>
-            This is a clean starter template for your personal website on GitHub
-            Pages.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#projects">View Projects</a>
-            <a class="btn btn-ghost" href="#contact">Get in Touch</a>
+        <div class="container hero-layout">
+          <figure class="avatar-wrap">
+            <img class="avatar" src="assets/avatar.jpg" alt="Portrait of Wang Shenglin" />
+          </figure>
+          <div class="hero-content">
+            <p class="eyebrow">Shanghai Jiao Tong University</p>
+            <h1>Wang Shenglin</h1>
+            <p>
+              I am currently with
+              <a href="https://sai.sjtu.edu.cn" target="_blank" rel="noopener noreferrer"
+                >SJTU School of Artificial Intelligence</a
+              >, advised by
+              <a
+                href="https://sai.sjtu.edu.cn/cn/facultydetails/zzjs/wenmuning"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Muning Wen</a
+              >.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#research">Research Interests</a>
+              <a class="btn btn-ghost" href="#contact">Contact Me</a>
+            </div>
           </div>
         </div>
       </section>
 
       <section id="about" class="section">
-        <div class="container narrow">
-          <h2>About Me</h2>
+        <div class="container narrow about-wrap">
+          <h2>About</h2>
           <p>
-            Write a short introduction here. Mention your background, interests,
-            and what kind of work you want to be known for.
+            I am interested in building reliable and efficient intelligent systems.
+            My current work focuses on reasoning, long-horizon decision making, and
+            domain-oriented AI applications.
           </p>
+          <ul class="info-list">
+            <li>
+              Institute:
+              <a href="https://sai.sjtu.edu.cn" target="_blank" rel="noopener noreferrer"
+                >SJTU School of Artificial Intelligence</a
+              >
+            </li>
+            <li>
+              Advisor:
+              <a
+                href="https://sai.sjtu.edu.cn/cn/facultydetails/zzjs/wenmuning"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Muning Wen</a
+              >
+            </li>
+            <li>Email: <a href="mailto:wangshenglin@sjtu.edu.cn">wangshenglin@sjtu.edu.cn</a></li>
+          </ul>
         </div>
       </section>
 
-      <section id="projects" class="section section-alt">
+      <section id="research" class="section section-alt">
         <div class="container">
-          <h2>Featured Projects</h2>
+          <h2>Research Interests</h2>
           <div class="project-grid">
             <article class="card">
-              <h3>Project One</h3>
-              <p>One-line summary of the project and your role.</p>
-              <a href="#" aria-label="Project One details">Learn more</a>
+              <h3>Reinforcement Learning</h3>
+              <p>Decision making under uncertainty, planning, and policy learning.</p>
             </article>
             <article class="card">
-              <h3>Project Two</h3>
-              <p>One-line summary of the project and your role.</p>
-              <a href="#" aria-label="Project Two details">Learn more</a>
+              <h3>Agent Memory</h3>
+              <p>Long-term memory and retrieval mechanisms for LLM-based agents.</p>
             </article>
             <article class="card">
-              <h3>Project Three</h3>
-              <p>One-line summary of the project and your role.</p>
-              <a href="#" aria-label="Project Three details">Learn more</a>
+              <h3>AI4Science</h3>
+              <p>Applying AI methods to scientific discovery and simulation workflows.</p>
             </article>
           </div>
+        </div>
+      </section>
+
+      <section id="awards" class="section">
+        <div class="container narrow">
+          <h2>Awards</h2>
+          <ul class="award-list">
+            <li>
+              <span class="award-title">ICPC Asia Regional Contest</span>
+              <span class="award-meta">[Year] [Gold/Silver/Bronze] [Rank]</span>
+            </li>
+            <li>
+              <span class="award-title">ICPC Invitational / Provincial Contest</span>
+              <span class="award-meta">[Year] [Award Level] [Team Name]</span>
+            </li>
+            <li>
+              <span class="award-title">ICPC Training / School-Level Honors</span>
+              <span class="award-meta">[Year] [Achievement Details]</span>
+            </li>
+          </ul>
+          <p class="note">You can replace the placeholders above with your final ICPC details.</p>
         </div>
       </section>
 
@@ -79,11 +130,8 @@
         <div class="container narrow">
           <h2>Contact</h2>
           <p>
-            Add your email and social links here so people can reach you quickly.
-          </p>
-          <p>
             Email:
-            <a href="mailto:your-email@example.com">your-email@example.com</a>
+            <a href="mailto:wangshenglin@sjtu.edu.cn">wangshenglin@sjtu.edu.cn</a>
           </p>
         </div>
       </section>
@@ -91,7 +139,7 @@
 
     <footer class="site-footer">
       <div class="container">
-        <small>&copy; <span id="current-year"></span> Your Name. All rights reserved.</small>
+        <small>&copy; <span id="current-year"></span> Wang Shenglin. All rights reserved.</small>
       </div>
     </footer>
 

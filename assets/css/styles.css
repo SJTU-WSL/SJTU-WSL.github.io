@@ -23,7 +23,8 @@ html {
 
 body {
   margin: 0;
-  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Noto Sans SC", "Avenir Next", "PingFang SC", "Microsoft YaHei",
+    sans-serif;
   color: var(--text);
   background: linear-gradient(180deg, #fbfcfc 0%, var(--bg) 100%);
   line-height: 1.6;
@@ -116,7 +117,28 @@ a {
 .hero-content {
   position: relative;
   z-index: 1;
-  max-width: 780px;
+}
+
+.hero-layout {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 2rem;
+  align-items: center;
+}
+
+.avatar-wrap {
+  margin: 0;
+}
+
+.avatar {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 2px solid rgba(12, 124, 89, 0.25);
+  box-shadow: var(--shadow);
 }
 
 .eyebrow {
@@ -202,9 +224,57 @@ h2 {
   color: var(--muted);
 }
 
-.card a {
-  font-weight: 700;
+.about-wrap p {
+  margin-bottom: 0.9rem;
+}
+
+.info-list {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.info-list li {
+  margin-bottom: 0.5rem;
+}
+
+.info-list a,
+.about-wrap a,
+.note a {
   color: var(--accent-strong);
+}
+
+.award-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.award-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--bg-elevated);
+  box-shadow: var(--shadow);
+}
+
+.award-list li + li {
+  margin-top: 0.75rem;
+}
+
+.award-title {
+  font-weight: 700;
+}
+
+.award-meta {
+  color: var(--muted);
+}
+
+.note {
+  margin-top: 0.85rem;
+  color: var(--muted);
 }
 
 .site-footer {
@@ -214,12 +284,26 @@ h2 {
 }
 
 @media (max-width: 860px) {
+  .hero-layout {
+    grid-template-columns: 180px minmax(0, 1fr);
+    gap: 1.4rem;
+  }
+
   .project-grid {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (max-width: 680px) {
+  .hero-layout {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .avatar-wrap {
+    max-width: 200px;
+  }
+
   .menu-toggle {
     display: inline-block;
   }

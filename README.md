@@ -1,6 +1,6 @@
-# Personal Website Starter
+# Personal Website
 
-Simple static starter for a personal website on GitHub Pages.
+Static personal website for GitHub Pages.
 
 ## Structure
 
@@ -17,12 +17,12 @@ Simple static starter for a personal website on GitHub Pages.
 ## Customize
 
 1. Edit text in `index.html`:
-   - `Your Name`
-   - About section
-   - Project cards
-   - Contact email
-2. Adjust colors and spacing in `assets/css/styles.css`.
-3. Add your project links in the `href="#"` placeholders.
+   - bio in `#home` and `#about`
+   - research cards in `#research`
+   - ICPC award details in `#awards`
+2. Replace avatar image:
+   - current path: `assets/avatar.jpg`
+3. Adjust colors and spacing in `assets/css/styles.css`.
 
 ## Local Preview
 
