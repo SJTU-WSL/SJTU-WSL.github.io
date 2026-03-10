@@ -123,13 +123,15 @@ a {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: 240px minmax(0, 1fr);
-  gap: 2rem;
+  grid-template-columns: minmax(120px, 18vw) minmax(0, 1fr);
+  gap: clamp(1rem, 2.2vw, 2rem);
   align-items: center;
 }
 
 .avatar-wrap {
   margin: 0;
+  width: clamp(120px, 18vw, 190px);
+  justify-self: start;
 }
 
 .avatar {
@@ -285,8 +287,12 @@ h2 {
 
 @media (max-width: 860px) {
   .hero-layout {
-    grid-template-columns: 180px minmax(0, 1fr);
-    gap: 1.4rem;
+    grid-template-columns: minmax(100px, 24vw) minmax(0, 1fr);
+    gap: 1rem;
+  }
+
+  .avatar-wrap {
+    width: clamp(100px, 24vw, 150px);
   }
 
   .project-grid {
@@ -301,7 +307,8 @@ h2 {
   }
 
   .avatar-wrap {
-    max-width: 200px;
+    width: clamp(88px, 30vw, 120px);
+    margin: 0 auto;
   }
 
   .menu-toggle {
